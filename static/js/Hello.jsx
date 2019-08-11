@@ -1,6 +1,5 @@
-    
 import React from "react";
-import { Button, Grid, Row, Col } from "react-bootstrap";
+import { Button, Row, Col } from "react-bootstrap";
 
 var $ = require('jquery');
 
@@ -18,7 +17,7 @@ export default class Hello extends React.Component {
     }
 
     getPythonHello() {
-        $.get(window.location.href + '/hello', (data) => {
+        $.get(window.location.href + 'hello', (data) => {
             console.log(data);
             this.personaliseGreeting(data);
         });
@@ -26,21 +25,13 @@ export default class Hello extends React.Component {
 
     render () {
         return (
-            <Grid>
-                <Row>
-                <Col md={7} mdOffset={5}>
+                <div>
                     <h1>{this.state.greeting}</h1>
-                    <hr/>
-                </Col>
-                </Row>
-                <Row>
-                <Col md={7} mdOffset={5}>
+            
                     <Button bsSize="large" bsStyle="danger" onClick={this.getPythonHello}>
-                    Say Hello!
+                        Say Hello!
                     </Button>
-                </Col>
-                </Row>
-            </Grid>
+                </div>
         );
     }
 }
