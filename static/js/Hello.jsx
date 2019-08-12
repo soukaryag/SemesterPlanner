@@ -27,7 +27,6 @@ export default class Hello extends React.Component {
         return (
                 <div>
                     <h1>{this.state.greeting}</h1>
-            
                     <Button bsSize="large" bsStyle="danger" onClick={this.getPythonHello}>
                         Say Hello!
                     </Button>

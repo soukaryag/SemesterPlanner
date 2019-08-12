@@ -1,5 +1,6 @@
 import random
 from flask import Flask, render_template
+from urlLoader import getClasses
 
 app = Flask(__name__, static_folder='../static/dist', template_folder='../static')
 
@@ -8,14 +9,9 @@ def index():
     return render_template('index.html')
 
 
-@app.route('/hello')
+@app.route('/getClasses')
 def hello():
-    return get_hello()
-
-
-def get_hello():
-    greeting_list = ['Ciao', 'Hei', 'Salut', 'Hola', 'Hallo', 'Hej']
-    return random.choice(greeting_list)
+    return getClasses('CS B.S.')
 
 
 if __name__ == '__main__':
