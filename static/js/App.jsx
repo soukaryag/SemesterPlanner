@@ -1,5 +1,5 @@
 import React from "react";
-import Hello from "./Hello";
+import FrontPage from "./FrontPage";
 import { Navbar } from "react-bootstrap";
 
 require('../css/fullstack.css');
@@ -21,7 +21,7 @@ export default class App extends React.Component {
             <header class='header'>
                 <div className='header-contents'>
                 {this.addHeaderImg()}
-                    <Hello name='SemesterX'/>
+                    <FrontPage name='SemesterX'/>
                 </div>
             </header>
         );

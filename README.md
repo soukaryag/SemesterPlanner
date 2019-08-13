@@ -37,6 +37,11 @@
 3. Update/modify code and then `git push` to your own fork 
 4. Open up a `Pull Request` to the `dev` branch on the base repo (soukaryag)
 
+## Bugs
+- Page redirect takes two clicks to work
+  - The first search redirects to /? and then the second search correctly goes to /classes?mjr=x
+  - This is b/c the form is funky, look for fixes
+
 ## Author
 - Author: Soukarya Ghosh
 - email: sg4fz@virginia.edu
