@@ -1,12 +1,6 @@
 # SemesterPlanner
 
 ## Getting Started
-### Contributing
-1. Fork this repo to your profile
-2. Clone it to your local machine using `git clone`
-3. Update/modify code and then `git push` to your own fork 
-4. Open up a `Pull Request` to the `dev` branch on the base repo (soukaryag)
-   
 ### Installing and Running
 1. After cloning the repo, `cd` into the `/static` directory and run `npm install`. This will download and install the dependencies listed in package.json.
    1. Install npm if you do not have it
@@ -36,3 +30,13 @@
 6. If any other dependencies are needed, install using `pip install -r requirements.txt` in the `/server` directory
 7. Start the server. Go to the server directory and run `python server.py` in terminal
 8. Go to `localhost:5000` and the webapp should render
+
+### Contributing
+1. Fork this repo to your profile
+2. Clone it to your local machine using `git clone`
+3. Update/modify code and then `git push` to your own fork 
+4. Open up a `Pull Request` to the `dev` branch on the base repo (soukaryag)
+
+## Author
+- Author: Soukarya Ghosh
+- email: sg4fz@virginia.edu
