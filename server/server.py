@@ -1,5 +1,5 @@
 import random
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 from urlLoader import getClasses
 
 app = Flask(__name__, static_folder='../static/dist', template_folder='../static')
@@ -8,10 +8,10 @@ app = Flask(__name__, static_folder='../static/dist', template_folder='../static
 def index():
     return render_template('index.html')
 
-
-@app.route('/getClasses')
-def hello():
-    return getClasses('CS B.S.')
+@app.route('/classes')
+def classes():
+    mjr = request.args.get('mjr')
+    return getClasses(mjr)
 
 
 if __name__ == '__main__':

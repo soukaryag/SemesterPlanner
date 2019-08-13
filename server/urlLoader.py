@@ -66,5 +66,3 @@ def getClasses(major):
     fp.close()
     return json.dumps(arrOfClasses)
 
-
-

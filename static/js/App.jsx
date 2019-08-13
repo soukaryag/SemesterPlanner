@@ -1,6 +1,6 @@
 import React from "react";
 import Hello from "./Hello";
-// import { PageHeader } from "react-bootstrap";
+import { Navbar } from "react-bootstrap";
 
 require('../css/fullstack.css');
 var $ = require('jquery');
@@ -18,10 +18,12 @@ export default class App extends React.Component {
 
     render () {
         return (
+            <header class='header'>
                 <div className='header-contents'>
                 {this.addHeaderImg()}
-                <Hello name='Soukarya' />
+                    <Hello name='SemesterX'/>
                 </div>
+            </header>
         );
     }
 }

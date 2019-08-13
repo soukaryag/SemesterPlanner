@@ -31,6 +31,7 @@
   "homepage": "https://github.com/soukaryag/SemesterPlanner#readme",
   "devDependencies": {
     "@babel/core": "^7.5.5",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
     "@babel/preset-env": "^7.5.5",
     "@babel/preset-react": "^7.0.0",
     "babel": "^6.23.0",
@@ -42,7 +43,9 @@
     "file-loader": "^4.2.0",
     "jquery": "^3.4.1",
     "react": "^16.9.0",
+    "react-autosuggest": "^9.4.3",
     "react-bootstrap": "^1.0.0-beta.11",
+    "react-bootstrap-autosuggest": "^0.5.0",
     "react-dom": "^16.9.0",
     "style-loader": "^1.0.0",
     "webpack": "^4.39.1",
@@ -52,6 +55,9 @@
     "presets": [
       "@babel/preset-env",
       "@babel/preset-react"
+    ],
+    "plugins": [
+      "@babel/plugin-proposal-class-properties"
     ]
   }
 }
