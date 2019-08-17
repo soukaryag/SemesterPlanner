@@ -13,7 +13,9 @@
          2. `py -m pip install --user virtualenv`
          3. `py -m venv env`
       2. Activating virtualenv
-         1. `.\env\Scripts\activate`
+         1. cd into `./server/env/Scripts/`
+         2. run `source activate`
+         3. return to the `/server` folder
       3. Deactivate it when you are done developing
          1. `deactivate`
    2. *macOS or Linux*
