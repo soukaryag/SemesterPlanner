@@ -1,24 +1,29 @@
 import React from "react";
-import { Form, Container, Button, Row, Col } from "react-bootstrap";
+import { Container, Button, Row, Col } from "react-bootstrap";
+import SelectSearch from 'react-select-search'
+import '../css/style.css';
+import '../css/fullstack.css';
+import { majors } from './data';
 
 var $ = require('jquery');
 
 export default class FrontPage extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {name: this.props.name};
-
+        this.state = {
+            name: this.props.name, 
+            major: 'NONE'
+        };
         // This binding is necessary to make `this` work in the callback
         this.redirect = this.redirect.bind(this);
     }
 
-
     redirect() {
-        $.get(window.location.href + 'classes', (data) => {
-            window.location = "/classes?mjr=" + $('#mjr').val();
-        });
+        $(window.location = "/classes?mjr=" + this.state.major.name);
     }
-
+    handleChange = selectedOption => {
+        this.state.major = selectedOption;
+    };
 
     render () {
         return (
@@ -28,15 +33,19 @@ export default class FrontPage extends React.Component {
                     <Col md={7} mdOffset={5}>
                         <h1>{this.state.name}</h1>
                         <hr/>
-                        <Form onSubmit={this.redirect}>
-                            <Form.Group controlId="Major">
-                                <Form.Control id="mjr" size="lg" type="text" placeholder="Enter Major" />
-                            </Form.Group>
-                            <br/>
-                            <Button variant="primary" type="submit">
-                                Get Started!
-                            </Button>
-                        </Form>
+                        <SelectSearch
+                            id="mjr"
+                            name="major"
+                            mode="input"
+                            value={this.state.major}
+                            options={majors}
+                            placeholder="Select Major"
+                            onChange={this.handleChange}
+                        />
+                        <br/>
+                        <Button variant="primary" type="button" onClick={this.redirect}>
+                            Get Started!
+                        </Button>
                     </Col>
                     <Col></Col>
                 </Row>
