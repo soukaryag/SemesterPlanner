@@ -1,6 +1,6 @@
+// App.jsx
 import React from "react";
 import FrontPage from "./FrontPage";
-import { Navbar } from "react-bootstrap";
 
 require('../css/fullstack.css');
 var $ = require('jquery');

@@ -39,10 +39,18 @@
 3. Update/modify code and then `git push` to your own fork 
 4. Open up a `Pull Request` to the `dev` branch on the base repo (soukaryag)
 
+
+## To-do
+- Front page search on enter
+- Design second temp page that shows all the classes for the major in a nice format
+- Clean out data from UVA dataset to only show REQUIRED classes for major (hard)
+- Login/user system
+- Database storage
+- Go to the cloud on with EC2 and RDS/S3
+- Double/Multiple Major functionality
+- Minor functionality (how to get data?)
+
 ## Bugs
-- Page redirect takes two clicks to work
-  - The first search redirects to /? and then the second search correctly goes to /classes?mjr=x
-  - This is b/c the form is funky, look for fixes
 
 ## Author
 - Author: Soukarya Ghosh

@@ -70,5 +70,5 @@ def getClasses(major):
     arrOfClasses = re.findall(pattern, mystr)
     
     fp.close()
-    return json.dumps(arrOfClasses)
+    return arrOfClasses
 
