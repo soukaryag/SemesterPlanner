@@ -42,6 +42,7 @@
 
 ## To-do
 - Front page search on enter
+- Make login with Google
 - Design second temp page that shows all the classes for the major in a nice format
 - Clean out data from UVA dataset to only show REQUIRED classes for major (hard)
 - Login/user system

@@ -184,8 +184,8 @@
             color: rgba(0, 0, 0, 0.5);
             font-size: 12px;
         }.header {
-    height: 100%;
-    background-image: url(93e41d9d601706af4a19054c6550ddc8.jpg);
+    height: 70%;
+    background-image: url(29df7f333923b8cb22b77c1df2adb0cc.jpg);
     background-repeat: repeat;
     background-position: center;
     background-size: cover;
@@ -195,7 +195,7 @@
     /* border: 2px solid green; */
     position: absolute;
     margin: auto;
-    top: 25%;
+    top: 15%;
     right: 0;
     bottom: 0;
     left: 0;
@@ -224,4 +224,37 @@
 .header-contents form{
     font-size: 100px;
     font-weight: 300;
+}
+.fadingHR hr {
+    border: 0;
+    height: 1px;
+    background: #333;
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,hsla(0,0%,0%,0)), color-stop(50%,hsla(0,0%,0%,.75)), color-stop(100%,hsla(0,0%,0%,0)));
+    background: -webkit-linear-gradient(left, hsla(0,0%,0%,0) 0%, hsla(0,0%,0%,.75) 50%, hsla(0,0%,0%,0) 100%);
+    background:    -moz-linear-gradient(left, hsla(0,0%,0%,0) 0%, hsla(0,0%,0%,.75) 50%, hsla(0,0%,0%,0) 100%);
+    background:     -ms-linear-gradient(left, hsla(0,0%,0%,0) 0%, hsla(0,0%,0%,.75) 50%, hsla(0,0%,0%,0) 100%);
+    background:      -o-linear-gradient(left, hsla(0,0%,0%,0) 0%, hsla(0,0%,0%,.75) 50%, hsla(0,0%,0%,0) 100%);
+    background:         linear-gradient(left, hsla(0,0%,0%,0) 0%, hsla(0,0%,0%,.75) 50%, hsla(0,0%,0%,0) 100%);
+}
+.cardDiv {
+    padding-top: 3rem;
+    padding-bottom: 15rem;
+}
+.centerText{
+    text-align: center;
+}
+.card{
+    width: 18rem;
+    height: 22rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 0.6rem;
+}
+.card-title{
+    color: #007bff;
+}
+.card-text{
+    color: #212529;
+}
+.card:hover {
+    transform: scale(1.05);
 }
