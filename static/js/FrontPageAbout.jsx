@@ -37,7 +37,6 @@ export default class FrontPageAbout extends React.Component {
                                     <Card.Text>
                                         We're continuously making this platform better. Here's what you need to know.
                                     </Card.Text>
-                                    {/* <Button variant="primary">Go somewhere</Button> */}
                                 </Card.Body>
                             </Card>
                         </a>
@@ -52,7 +51,6 @@ export default class FrontPageAbout extends React.Component {
                                     <Card.Text>
                                         Explore all the majors that UVA has to offer.
                                     </Card.Text>
-                                    {/* <Button variant="primary">Go somewhere</Button> */}
                                 </Card.Body>
                             </Card>
                         </a>
@@ -68,7 +66,6 @@ export default class FrontPageAbout extends React.Component {
                                     <Card.Text>
                                         Login and maintain your account using your UVA login.
                                     </Card.Text>
-                                    {/* <Button variant="primary">Go somewhere</Button> */}
                                 </Card.Body>
                             </Card>
                         </a>
