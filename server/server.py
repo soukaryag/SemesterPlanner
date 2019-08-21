@@ -20,5 +20,17 @@ def classes():
     formatted_names = json.dumps(names)
     return formatted_names
 
+@app.route('/announcements')
+def announcements():
+    return "Announcements TBD"
+
+@app.route('/browse')
+def browse():
+    return "Browse TBD"
+
+@app.route('/login')
+def login():
+    return "Login TBD"
+
 if __name__ == '__main__':
     app.run()

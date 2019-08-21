@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Col, Row, Card, Button } from "react-bootstrap";
 import '../css/fullstack.css';
+import * as CONSTANTS from './config';
 
 var $ = require('jquery');
 
@@ -16,10 +17,10 @@ export default class FrontPageAbout extends React.Component {
                 <Row>
                     <Col></Col>
                     <Col xs={8}>
-                        <h1 class="centerText">Welcome to SemesterX!</h1>
+                        <h1 class="centerText">Welcome to { CONSTANTS.CompanyName }!</h1>
                         <p class="centerText">
-                            This is a platform built to help students lay ou the rest of their Undergraduate days.
-                            You can access to plan out of your semesters with your intended majors and minors in this user-friendly environment!
+                            This is a platform built to help students lay out the rest of their undergraduate days.
+                            Plan your semesters with your intended majors and minors in this user-friendly environment!
                         </p>
                     </Col>
                     <Col></Col>

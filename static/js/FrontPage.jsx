@@ -4,6 +4,7 @@ import SelectSearch from 'react-select-search'
 import '../css/style.css';
 import '../css/fullstack.css';
 import { majors } from './data';
+import * as CONSTANTS from './config';
 
 var $ = require('jquery');
 
@@ -32,7 +33,7 @@ export default class FrontPage extends React.Component {
                     <Col></Col>
                     <Col md={7} mdOffset={5}>
                         <h1>{this.state.name}</h1>
-                        <hr/>
+                        <br/>
                         <SelectSearch
                             id="mjr"
                             name="major"
