@@ -3,6 +3,7 @@ import React from "react";
 import FrontPage from "./FrontPage";
 import FrontPageAbout from "./FrontPageAbout";
 import { Navbar, Nav } from "react-bootstrap";
+import * as CONSTANTS from './config';
 
 require('../css/fullstack.css');
 var $ = require('jquery');
@@ -21,12 +22,12 @@ export default class App extends React.Component {
     render () {
         return (
             <div>
-                <header class='header'>
+                <header class='header' id="home">
                     <Navbar bg="light" variant="light" fixed="top">
-                        <Navbar.Brand href="#home">SemesterX</Navbar.Brand>
+                        <Navbar.Brand href="#home">{ CONSTANTS.CompanyName }</Navbar.Brand>
                         <Nav className="mr-auto">
                             <Nav.Link href="#home">Home</Nav.Link>
-                            <Nav.Link href="#features">About</Nav.Link>
+                            <Nav.Link href="#about">About</Nav.Link>
                             <Nav.Link href="#pricing">Pricing</Nav.Link>
                         </Nav>
                         <Nav>
@@ -37,13 +38,13 @@ export default class App extends React.Component {
                 
                     <div className='header-contents'>
                     {this.addHeaderImg()}
-                        <FrontPage name='SemesterX'/>
+                        <FrontPage name={ CONSTANTS.CompanyName }/>
                     </div>
                 </header>
-                <br/>
-                <div class="cardDiv">
+                <div class="cardDiv" id="about">
                     <FrontPageAbout/>
                 </div>
+
             </div>
         );
     }
