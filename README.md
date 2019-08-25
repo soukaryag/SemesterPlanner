@@ -41,14 +41,21 @@
 
 
 ## To-do
-- Front page search on enter
 - Make login with Google
+  - Login/user system
+  - Database storage
+- Figure out how to control page flow
+  - Use the react native system to transfer pages
 - Design second temp page that shows all the classes for the major in a nice format
+  - Figure out design format, and what is most efficient
+  - Make classes draggable and easily switchable
+- Create tree of major flow (hard)
+  - How to get data on whats a prereq?
 - Clean out data from UVA dataset to only show REQUIRED classes for major (hard)
-- Login/user system
-- Database storage
-- Go to the cloud on with EC2 and RDS/S3
+  - Potential for manual remediation here
 - Double/Multiple Major functionality
+- Go to the cloud on with EC2 and RDS/S3 with single major functional
+- Front page search on enter
 - Minor functionality (how to get data?)
 
 ## Bugs
